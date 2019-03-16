@@ -1,0 +1,193 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<meta name="author" content="Josue Lotshango sombo, Master  of computer science in University of West of Scotland">
+		<!-- Meta Description -->
+		<meta name="description" content="MovieProps customer can book online document">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>MovieProps</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">
+			<link rel="stylesheet" href="css/main.css">
+			<style type="text/css">
+			  /*@media only screen and (max-width: 600px) {
+              body {
+              background-color: lightblue;
+              }
+              }*/
+				#logo1{
+					color: tomato;
+					font-size: 30px;
+					padding:10px;
+					position: relative;
+				}
+				#logo1:hover{
+					color: white;
+					font-size: 40px;
+					padding:10px;
+					position: relative;
+				}
+				@media only screen and (max-width: 600px) {
+					.mobilesize{
+						width:100%;
+						height:950px;
+					}
+					.mobileimg {
+					display: block;
+				 width: 340px;
+				 height: 300px;
+				 border:1px solid lightgray;
+				 border-radius: 5px;
+				 margin-bottom: 10px;
+					}
+				 }
+			</style>
+			<script type="text/javascript">
+				function image()
+				{
+					document.getElementById('imagenote').src="img/scorpion-about.jpg";
+				}
+				function imageout(){
+					document.getElementById('imagenote').src="img/banner-bg.jpg";
+				}
+				function header(){
+					document.getElementById('h1').style.color='tomato';
+				}
+				function hide(){
+					document.getElementById('hide').style.display='none';
+                }
+               function display(){
+               	document.getElementById('hide').style.display='block';
+                }
+
+                var myPix = new Array("img/banner-bg.jpg","img/scorpion-about.jpg","img/register.jpg","img/csi1.jpg");
+
+                function choosePic() {
+              var randomNum = Math.floor(Math.random() * myPix.length);
+              document.getElementById("imagenote").src = myPix[randomNum];
+                }
+                setInterval('choosePic()', 1000);
+                </script>
+		</head>
+		<body>
+		  <header id="header" id="home">
+	  		<div class="header-top">
+	  			<div class="container">
+			  		<div class="row">
+			  			<div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+			  			</div>
+			  			<div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
+			  				<a href="tel:+91 918861657097"><span class="lnr lnr-phone-handset"></span> <span class="text">+91 8861657097</span></a>
+			  				<a href="mailto:lotshangojosue@gmail.com"><span class="lnr lnr-envelope"></span> <span class="text">movieprops@gmail.com</span></a>
+			  			</div>
+			  		</div>
+	  			</div>
+			</div>
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="index.html"><img src="img/logo.png" width="140" alt="" title="" class="rounded" style="border-radius: 100px;" /></a>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+			          <li><a href="index.html">Home</a></li>
+			          <li><a href="about.html">About</a></li>
+			          <li><a href="product.html">Product</a></li>
+			          <li><a href="registerform.html">Register</a></li>
+			          <li><a href="contact.html">Contact</a></li>
+			        </ul>
+			      </nav><!-- #nav-menu-container -->
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+
+			<!-- start banner Area -->
+			<section class="banner-area relative about-banner" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+							   About
+							</h1>
+							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.html"> About</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+			<!-- Start About Area -->
+			<section class="container mobilesize" style="margin-top: 25px;margin-bottom: 20px;width: 100%;height: 750px;margin-top:20px;">
+			<div class="row">
+				<div class="col-md-5 col-sm-5">
+			 				<img src="img/banner-bg.jpg" width="500" height="400" class="rounded mobileimg" id="imagenote" onmouseover="image()" onmouseout="imageout()">
+			 			</div>
+			 			<div class="col-md-1 col-sm-1">
+
+			 			</div>
+			 			<div class="col-md-5 col-sm-5">
+			 				<h1 class="text-center display-4" id="h1" onmouseover="header()">About Us</h1>
+			 				<p>Movieprops started on 2nd October by two people.The idea of creating this company was innovated by one of this two people. Chairman or CEO of this company's Mr Lotshango Sombo josue who's a student of UWS University,where is doing is master of IT(information technology).
+			 				Staff director's name is Emmanuel.Student at UWS University where is studying is Master degre in Computing System.</p>
+
+<p id="hide" onmouseout="hide()">Company itself is located in India precisely in Bangalore.Movieprops has less number of employees around 20 workers.Where they devided into four team or departement.team one is for multimedia,team 2 is for software,team 3 is for teacher student online and team 4 is for cinema.
+We have another office in UK and Scotland where all our expert are working hard to make movieprops one of the best in the world. </p>
+			 			</div>
+			 		</div>
+
+			 	</div>
+			</div>
+			</section>
+			<!-- End About Area -->
+
+
+			<!-- Start cta-two Area -->
+			<footer>
+				<div class="container-fluid">
+					<div class="row bg-secondary" style="height: 50px;margin-top: 2px;">
+						<div class="col-md-12 col-sm-12">
+							<p class="text-center" style="color: white;margin-top:10px;">Copyright &copy;Lotshango Sombo josue</p>
+
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->
+
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+    		<script src="js/jquery.tabs.min.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+	</html>

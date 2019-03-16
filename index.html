@@ -1,0 +1,390 @@
+	<!DOCTYPE html>
+	<html lang="en-US" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="Josue Lotshango sombo, Master  of computer science in University of West of Scotland">
+		<!-- Meta Description -->
+		<meta name="description" content="MovieProps customer can book online document">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="Web programming,Android,Management ...">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>MovieProps</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">
+			<link rel="stylesheet" href="css/main.css">
+			<style type="text/css">
+             #logo1:hover{
+              width: 250px;
+              height: 290px;
+              border-radius: 2px;
+              outline: 1px solid lightgray;
+             }
+             #vision{
+             	color:  #ff0066;
+             }
+						 @media only screen and (max-width: 780px) {
+               .mobileimg {
+               display: block;
+							 width: 315px;
+							 height: 300px;
+							 border:1px solid lightgray;
+							 border-radius: 5px;
+							 margin-bottom: 10px;
+               }
+							 #myPicture{
+								 margin-bottom: 15px;
+							 }
+              }
+			</style>
+		<!-- Check if user enter Empty pass -->
+		<script type="text/javascript">
+			function mail(){
+				alert("Write as for Admission at moviepropsadmission@gmail.com");
+			}
+			function welcome(){
+             alert("welcome to Movieprops one of the best");
+			}
+
+			function validation(){
+              var name = document.getElementById('name').value;
+              var email = document.getElementById('email').value;
+              if (name === "") {
+              	alert("Please Enter Name !!!");
+              	return false;
+              }
+
+              if (email === "") {
+              	alert("Please Enter Email !!!");
+              	return false;
+              }
+			}
+			var myPix = new Array("img/banner-bg.jpg","img/scorpion-about.jpg","img/register.jpg","img/csi1.jpg");
+
+                function choosePic() {
+              var randomNum = Math.floor(Math.random() * myPix.length);
+              document.getElementById("myPicture").src = myPix[randomNum];
+                }
+                setInterval('choosePic()', 1000);
+
+		</script>
+		</head>
+		<body>
+		  <header id="header" id="home">
+	  		<div class="header-top">
+	  			<div class="container">
+			  		<div class="row">
+			  			<div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+			  				<!-- Nothing to display here -->
+			  			</div>
+			  			<div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding ">
+			  				<a href="tel:+918861657097"><span class="lnr lnr-phone-handset"></span> <span class="text">+91 8861657097</span></a>
+			  				<a href="mailto:lotshangojosue@gmail.com"><span class="lnr lnr-envelope"></span> <span class="text">movieprops@gmail.com</span></a>
+			  			</div>
+			  		</div>
+	  			</div>
+			</div>
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			      	<div class="row details-content">
+					<div class="col single-detials">
+			        <a href="index.html"><img src="img/logo.png" width="140" alt="" title="" class="rounded"  style="border-radius: 100px;" /></a>
+			        <span id="logo1"></span>
+			    </div>
+			</div>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+			          <li><a href="index.html">Home</a></li>
+			          <li><a href="about.html">About</a></li>
+			          <li><a href="product.html">Product</a></li>
+			          <li><a href="registerform.html">Register</a></li>
+			          <li><a href="contact.html">Contact</a></li>
+			        </ul>
+			      </nav><!-- #nav-menu-container -->
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-between">
+						<div class="banner-content col-lg-9 col-md-12">
+							<h1 class="text-uppercase">
+								MovieProps &nbsp;Ensure &nbsp; better &nbsp; Movie &nbsp;
+								Materials &nbsp; in &nbsp; the &nbsp;world
+							</h1>
+							<p class="pt-10 pb-10">
+								In the history of modern image quality, moviesprops provide one greater movie online.
+							</p>
+							<a href="registerform.html" class="primary-btn text-uppercase">Register Now</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+			<!-- Start feature Area -->
+			<section class="feature-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="single-feature">
+								<div class="title">
+									<h4>Watch Online Movies</h4>
+								</div>
+								<div class="desc-wrap">
+									<p>
+										Movieprops heps customer to watch movie online.Customer must register first and get customerId than He can watch all our movies.
+									</p>
+									<a href="registerform.html">Register Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-feature">
+								<div class="title">
+									<h4>No.1 of Props Movie</h4>
+								</div>
+								<div class="desc-wrap">
+									<p>
+										We provide a great props of movie, No need of spend a lot of money.Customer can buy props online to help them to make a romantics movies.
+									</p>
+									<a href="registerform.php">Register Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-feature">
+								<div class="title">
+									<h4>Huge Library Movies</h4>
+								</div>
+								<div class="desc-wrap">
+									<p>
+										If you want watching movie online.We have a huge number of movies in our library.Customer must first create account then it can watch movie.
+									</p>
+									<a href="registerform.html">Register Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End feature Area -->
+
+			<!-- Start popular-course Area -->
+			<section class="popular-course-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Popular Props we offer</h1>
+								<p>There is a moment in the life of any aspiring. Props helps humans to make a complete nice movies.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row text-center">
+					<div class="col-md-3">
+						<img src="img/mat1.jpg" width="200" height="270" id="logo11" class="mobileimg" style="border:1px solid lightgray;">
+					</div>
+					<div class="col-md-3">
+						<img src="img/mat2.jpg" width="200" height="270" id="logo1" class="mobileimg" style="border:1px solid lightgray;">
+					</div>
+					<div class="col-md-3">
+						<img src="img/mat3.jpg" width="200" height="270" id="logo1" class="mobileimg">
+					</div>
+					<div class="col-md-3">
+						<img src="img/mat4.jpg" width="200" height="270" id="logo1" class="mobileimg">
+					</div>
+					</div>
+					<br>
+					<div class="row text-center">
+					<div class="col-md-3">
+						<img src="img/mat5.jpg" width="200" height="270" id="logo1" class="mobileimg">
+					</div>
+					<div class="col-md-3">
+						<img src="img/mat6.jpg" width="200" height="270" id="logo1" class="mobileimg">
+					</div>
+					<div class="col-md-3">
+						<img src="img/mat7.jpg" width="200" height="270" id="logo1" class="mobileimg">
+					</div>
+					<div class="col-md-3">
+						<img src="img/mat8.jpg" width="200" height="270" id="logo1" style="border:1px solid lightgray;" class="mobileimg">
+					</div>
+					</div>
+					<br>
+					<div class="container">
+						<div class="title text-center">
+								<h1 class="mb-10">Popular Movies we offer</h1>
+								<p>There is a moment in the life of any aspiring. Props helps humans to make a complete nice movies.</p>
+							</div>
+					</div>
+					<div class="row text-center">
+					<div class="col-md-3">
+						<img src="img/arrow1.jpg"  width="200" height="270" id="logo1" class="mobileimg">
+					</div>
+					<div class="col-md-3">
+						<img src="img/banner-bg.jpg" width="200" height="270" class="mobileimg" id="logo1">
+					</div>
+					<div class="col-md-3">
+						<img src="img/iro.jpg" height="270" width="200" id="logo1" class="mobileimg">
+					</div>
+					<div class="col-md-3">
+						<img src="img/ter.jpg" width="200" height="270" class="mobileimg" id="logo1">
+					</div>
+					</div>
+					<br>
+					<div class="row text-center">
+					<div class="col-md-3">
+						<img src="img/scorpion.jpg" width="200" height="270" id="logo1" class="mobileimg">
+					</div>
+					<div class="col-md-3">
+						<img src="img/iron.jpg" width="200" height="270" id="logo1" class="mobileimg">
+					</div>
+					<div class="col-md-3">
+						<img src="img/twilight1.jpg" width="200" height="270" id="logo1" class="mobileimg">
+					</div>
+					<div class="col-md-3">
+						<img src="img/jungle.jpg" width="200" height="270" id="logo1" class="mobileimg">
+					</div>
+					</div>
+			</section>
+			<!-- End popular-course Area -->
+
+
+			<!-- Start search-course Area -->
+			<section class="search-course-area relative">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row justify-content-between align-items-center">
+						<div class="col-lg-6 col-md-6 search-course-left">
+							<h1 class="text-white">
+								Get Full enjoying <br>
+								during this Summer!
+							</h1>
+							<p>
+								inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the workplace is beyond reproach.
+							</p>
+							<div class="row details-content">
+								<div class="col single-detials">
+									<span class="lnr lnr-camera-video"></span>
+									<h4>Expert In Movie Quality</h4>
+									<p>
+										Usage of the Internet is becoming more common due to rapid advancement of technology and power.Help Movieprops to make customer life easy.
+									</p>
+								</div>
+								<div class="col single-detials">
+									<span class="lnr lnr-license"></span>
+									<h4>Certification</h4>
+									<p>
+										Movieprops has a great people graduated in Multimedia and cinema.
+										We give job to whom believe is great in this services.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 search-course-right section-gap">
+			<form class="form-wrap" action="https://formspree.io/lotshangojosue@gmail.com" method="post" enctype="text/plain">
+								<h4 class="text-white pb-20 text-center mb-30">Register to our Newsletter</h4>
+								<input type="text" class="form-control" name="Your Name" id="name" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" >
+
+								<input type="email" class="form-control" name="Your Email" id="email" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'" >
+								<button class="primary-btn text-uppercase" onclick="return validation()" type="submit">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End search-course Area -->
+
+
+			<!-- Start database connectivity  Area -->
+
+			<!-- End database connectivity Area -->
+
+			<!-- Start of Vision -->
+			<div class="container-fluid">
+				<div class="" style="width: 100%;height: 300px;margin-top: 50px;">
+					<div class="row">
+						<div class="col-md-1">
+
+						</div>
+						<div class="col-md-5">
+						<h1 class="text-center display-4" id="vision">Our Vision</h1>
+						<p class="text-center" style="font-size: 18px;">Movieprops works hard to be one of the best online movie product in the world.Our vision is to help customer to be familiar with new props and advenced Technology Indusry using in cinema.Customer must loggin and watch our movie.</p>
+						</div>
+
+						<div class="col-md-6">
+							<img src="img/banner-bg.jpg" width="500" height="400" class="mobileimg" id="myPicture" style="border-radius: 5px;">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- End of Vision -->
+			<section class="cta-one-area relative section-gap" style="margin-top: 110px;">
+				<div class="container">
+					<div class="overlay overlay-bg"></div>
+					<div class="row justify-content-center">
+						<div class="wrap">
+							<h1 class="text-white">Become a Multimedia Expert</h1>
+							<p>
+								We are offering a best course online to help people to work in Cinematography area.
+								All our teacher are expert in multimedia from the good university.If you want to take admission just Email us at<a href="" onclick="mail()">&nbsp;&nbsp;moviepropsadmission@gmail.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End cta-one Area -->
+
+			<!-- Start blog Area -->
+			<!-- End of Vision -->
+			<footer>
+				<div class="container-fluid">
+					<div class="row bg-secondary" style="height: 50px;margin-top: 2px;">
+						<div class="col-md-12 col-sm-12">
+							<p class="text-center" style="color: white;margin-top:10px;">Copyright &copy;<?php echo date('Y');?>&nbsp;By Lotshango sombo josue</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->
+
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+    		<script src="js/jquery.tabs.min.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/mail-script.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+	</html>

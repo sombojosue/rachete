@@ -18,6 +18,7 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 			<!--
 			CSS
 			============================================= -->
@@ -31,6 +32,9 @@
 			<link rel="stylesheet" href="css/jquery-ui.css">
 			<link rel="stylesheet" href="css/main.css">
 			<style type="text/css">
+			       .phonemenu{
+							 display: none;
+						 }
              #logo1:hover{
               width: 250px;
               height: 290px;
@@ -41,6 +45,30 @@
              	color:  #ff0066;
              }
 						 @media only screen and (max-width: 780px) {
+                .phonemenu{
+									display: block;
+								}
+							 .font{
+								 font-size: 30px;
+								 color: red;
+								 cursor: pointer;
+							 }
+							 #nav-menu-phone{
+								 display: none;
+							 }
+							 #nav-menu-phone li{
+								 width: 100%;
+								 font-size: 25px;
+								 padding: 2px;
+							 }
+							 #nav-menu-phone li:hover{
+								 width: 100%;
+								 padding: 2px;
+								 background-color: lightgray;
+							 }
+							 #spaceheader{
+								 margin-top: 110px;
+							 }
                .mobileimg {
                display: block;
 							 width: 315px;
@@ -75,6 +103,10 @@
               	alert("Please Enter Email !!!");
               	return false;
               }
+			}
+
+			function phonemenu() {
+				document.getElementById("nav-menu-phone").style.display = "block";
 			}
 			var myPix = new Array("img/banner-bg.jpg","img/scorpion-about.jpg","img/register.jpg","img/csi1.jpg");
 
@@ -111,7 +143,12 @@
 			    </div>
 			</div>
 			      </div>
-			      <nav id="nav-menu-container">
+						<div class="phonemenu">
+							<div class="left">
+             <i class="fas fa-align-justify font" id="phonemenu" onclick="phonemenu()"></i>
+						</div>
+					</div>
+			      <nav id="nav-menu-phone">
 			        <ul class="nav-menu">
 			          <li><a href="index.html">Home</a></li>
 			          <li><a href="about.html">About</a></li>
@@ -130,7 +167,7 @@
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-between">
 						<div class="banner-content col-lg-9 col-md-12">
-							<h1 class="text-uppercase">
+							<h1 class="text-uppercase" id="spaceheader">
 								MovieProps &nbsp;Ensure &nbsp; better &nbsp; Movie &nbsp;
 								Materials &nbsp; in &nbsp; the &nbsp;world
 							</h1>

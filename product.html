@@ -16,6 +16,8 @@
 		<title>MovieProps</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 			<!--
 			CSS
 			============================================= -->
@@ -36,16 +38,48 @@
               outline: 1px solid lightgray;
              }
 						 @media only screen and (max-width: 780px) {
-							 .mobileimg {
-							 display: block;
-							width: 315px;
-							height: 300px;
-							border:1px solid lightgray;
-							border-radius: 5px;
-							margin-bottom: 10px;
+                .phonemenu{
+									display: block;
+								}
+							 .font{
+								 font-size: 30px;
+								 color: red;
+								 cursor: pointer;
 							 }
-							}
+							 #nav-menu-phone{
+								 display: none;
+							 }
+							 #nav-menu-phone li{
+								 width: 100%;
+								 font-size: 25px;
+								 padding: 2px;
+							 }
+							 #nav-menu-phone li:hover{
+								 width: 100%;
+								 padding: 2px;
+								 background-color: lightgray;
+							 }
+							 #spaceheader{
+								 margin-top: 110px;
+							 }
+               .mobileimg {
+               display: block;
+							 width: 315px;
+							 height: 300px;
+							 border:1px solid lightgray;
+							 border-radius: 5px;
+							 margin-bottom: 10px;
+               }
+							 #myPicture{
+								 margin-bottom: 15px;
+							 }
+              }
 			</style>
+			<script>
+			function phonemenu() {
+				document.getElementById("nav-menu-phone").style.display = "block";
+			}
+			</script>
 		</head>
 		<body>
 		  <header id="header" id="home">
@@ -66,7 +100,12 @@
 			      <div id="logo">
 			      	<a href="index.html"><img src="img/logo.png" width="140" alt="" title="" class="rounded" style="border-radius: 100px;" /></a>
 			      </div>
-			      <nav id="nav-menu-container">
+						<div class="phonemenu">
+							<div class="left">
+             <i class="fas fa-align-justify font" id="phonemenu" onclick="phonemenu()"></i>
+						</div>
+					</div>
+			      <nav id="nav-menu-phone">
 			        <ul class="nav-menu">
 			          <li><a href="index.html">Home</a></li>
 			          <li><a href="about.html">About</a></li>
@@ -85,7 +124,7 @@
 				<div class="container">
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
-							<h1 class="text-white">
+							<h1 class="text-white" id="spaceheader">
 							   book our Best Product
 							</h1>
 							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.html"> Product</a></p>

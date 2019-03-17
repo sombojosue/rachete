@@ -15,7 +15,7 @@
 		<meta charset="UTF-8">
 		<!-- Site Title -->
 		<title>MovieProps</title>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 			<!--
 			CSS
@@ -42,18 +42,41 @@
 					padding:10px;
 					position: relative;
 				}
-        @media only screen and (max-width: 600px) {
-          .mobilesize{
-            width:100%;
-            height:950px;
+        @media only screen and (max-width: 780px) {
+           .phonemenu{
+             display: block;
+           }
+          .font{
+            font-size: 30px;
+            color: red;
+            cursor: pointer;
+          }
+          #nav-menu-phone{
+            display: none;
+          }
+          #nav-menu-phone li{
+            width: 100%;
+            font-size: 25px;
+            padding: 2px;
+          }
+          #nav-menu-phone li:hover{
+            width: 100%;
+            padding: 2px;
+            background-color: lightgray;
+          }
+          #spaceheader{
+            padding-top: 100px;
           }
           .mobileimg {
           display: block;
-         width: 340px;
-         height: 300px;
-         border:1px solid lightgray;
-         border-radius: 5px;
-         margin-bottom: 10px;
+          width: 315px;
+          height: 300px;
+          border:1px solid lightgray;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          }
+          #myPicture{
+            margin-bottom: 15px;
           }
          }
 
@@ -92,6 +115,9 @@
               	return false;
               }
 			  }
+        function phonemenu() {
+  				document.getElementById("nav-menu-phone").style.display = "block";
+  			}
 			  function image()
 				{
 					document.getElementById('imagenote').src="img/scorpion1.jpg";
@@ -128,16 +154,20 @@
 			      <div id="logo">
 			        <a href="index.html"><img src="img/logo.png" width="140" alt="" title="" class="rounded" style="border-radius: 100px;" /></a>
 			      </div>
-			      <nav id="nav-menu-container">
-			         <ul class="nav-menu">
-			          <li><a href="index.html">Home</a></li>
-			          <li><a href="about.html">About</a></li>
-			          <li><a href="product.html">Product</a></li>
-			          <li><a href="registerform.html">Register</a></li>
-
-			          <li><a href="contact.html">Contact</a></li>
-			        </ul>
-			      </nav><!-- #nav-menu-container -->
+            <div class="phonemenu">
+              <div class="left">
+             <i class="fas fa-align-justify font" id="phonemenu" onclick="phonemenu()"></i>
+            </div>
+          </div>
+            <nav id="nav-menu-phone">
+              <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="registerform.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav><!-- #nav-menu-container -->
 		    	</div>
 		    </div>
 		  </header><!-- #header -->
@@ -148,7 +178,7 @@
 				<div class="container">
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
-							<h1 class="text-white">
+							<h1 class="text-white" id="spaceheader">
 								Customer Registration
 							</h1>
 							<p class="text-white link-nav"><a href="index.php">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.php"> Contact Us</a></p>
